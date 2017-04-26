@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Project1</title>
+        <link type="text/css" rel="stylesheet" href="kitten1_style.css"/>
+    </head>
+    <body>
+        <script>
+            function bigImg(x) {
+                x.style.height = "353px";
+                x.style.width = "578px";
+                x.style.marginTop = "-40px";
+            }
+            function normalImg(x){
+                x.style.height = "282px";
+                x.style.width = "462px";
+                x.style.marginTop = "auto";
+            }
+            function validateForm() {
+                var x = document.forms["kform"]["firstname"].value;
+                if(x == "")
+                    {
+                        alert("First name must be filled out");
+                        return false;
+                    }
+                if(!isNaN(parseFloat(x)) && isFinite(x))
+                    {
+                        alert("Invalid name input");
+                        return false;
+                    }
+                x = document.forms["kform"]["lastname"].value;
+                if(x == "")
+                    {
+                        alert("Last name must be filled out");
+                        return false;
+                    }
+                if(!isNaN(parseFloat(x)) && isFinite(x))
+                    {
+                        alert("Invalid name input");
+                        return false;
+                    }
+                x = document.forms["kform"]["streetaddress"].value;
+                if(x == "")
+                    {
+                        alert("Street address must be filled out");
+                        return false;
+                    }
+                x = document.forms["kform"]["city"].value;
+                if(x == "")
+                    {
+                        alert("City must be filled out");
+                        return false;
+                    }
+                if(!isNaN(parseFloat(x)) && isFinite(x))
+                    {
+                        alert("Invalid city input");
+                        return false;
+                    }
+                x = document.forms["kform"]["state"].value;
+                if(x == "")
+                    {
+                        alert("State must be filled out");
+                        return false;
+                    }
+                if(!isNaN(parseFloat(x)) && isFinite(x))
+                    {
+                        alert("Invalid state input");
+                        return false;
+                    }
+                x = document.forms["kform"]["zipcode"].value;
+                if(x == "")
+                    {
+                        alert("Zip code must be filled out");
+                        return false;
+                    }
+                if(!(!isNaN(parseFloat(x)) && isFinite(x)))
+                    {
+                        alert("Invalid zip code input");
+                        return false;
+                    }
+                x = document.forms["kform"]["phonenumber"].value;
+                if(x == "")
+                    {
+                        alert("Phone number must be filled out");
+                        return false;
+                    }
+                if(!(!isNaN(parseFloat(x)) && isFinite(x)))
+                    {
+                        alert("Invalid phone number input");
+                        return false;
+                    }
+                x = document.forms["kform"]["ccnum"].value;
+                if(x == "")
+                    {
+                        alert("Credit card number must be filled out");
+                        return false;
+                    }
+                if(!(!isNaN(parseFloat(x)) && isFinite(x)))
+                    {
+                        alert("Invalid credit card number input");
+                        return false;
+                    }
+                if(x.toString().length < 14 || x.toString().length > 16)
+                    {
+                        alert("Incorrect credit card number length")
+                        return false;
+                    }
+                x = document.forms["kform"]["ccname"].value;
+                if(x == "")
+                    {
+                        alert("Name on credit card must be filled out");
+                        return false;
+                    }
+                if(!isNaN(parseFloat(x)) && isFinite(x))
+                    {
+                        alert("Invalid name input");
+                        return false;
+                    }
+                x = document.forms["kform"]["ccsnum"].value;
+                if(x == "")
+                    {
+                        alert("Security number must be filled out");
+                        return false;
+                    }
+                if(!(!isNaN(parseFloat(x)) && isFinite(x)))
+                    {
+                        alert("Invalid security number input");
+                        return false;
+                    }
+                if(x.toString().length != 3)
+                    {
+                        alert("Invalid security number");
+                        return false;
+                    }
+            }
+        </script>
+        <div id="main">
+            <h1 id="header">Kittens For All</h1>
+            <nav>
+                <a href="home.html">Home </a>
+                <a href="about_us.html">About Us </a>
+            </nav>
+        <div id="imagearea">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" id="img" src="kitten2.jpg">
+        </div>
+        
+        <p class="info" id="name">Name: Cookie</p>
+        <p class="info" id="price">Gender: Male</p>
+        <p class="info" id="price">Price: $750</p>
+        <p class="info" id="description">Cookie is a well behaved cat looking for a loving family to call his own. We are hoping that he can find that home through you! If you would like to purchase this cat please fill out the form below.</p>
+        <div id="formdiv">
+            <form name="kform" action="mailto:aboozan@uci.edu" onsubmit="return validateForm()" method="post" enctype="text/plain">
+            First name:<br>
+            <input type="text" name="firstname"><br>
+            Last name:<br>
+            <input type="text" name="lastname"><br>
+            Street address:<br>
+            <input type="text" name="streetaddress"><br>
+            City:<br>
+            <input type="text" name="city"><br>
+            State:<br>
+            <input type="text" name="state"><br>
+            Zip code:<br>
+            <input type="text" name="zipcode"><br>
+            Phone number (digits only):<br>
+            <input type="text" name="phonenumber"><br>
+            Shipping type:<br>
+            <select name="shipping">
+                <option value="overnight">Overnight Shipping</option>
+                <option value="2day">2 day Shipping</option>
+                <option value="6day">6 day Shipping</option>
+            </select> <br><br>
+            Credit Card info<br>
+            Credit Card number (No spaces):<br>
+            <input type="text" name="ccnum"><br>
+            Name on card:<br>
+            <input type="text" name="ccname"><br>
+            Security number on card:<br>
+            <input type="password" name="ccsnum"><br><br>
+            Cat being purchased is 
+            <select name="cat_being_purchased">
+                <option value="cookie">Cookie</option>
+            </select><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            </form>
+        </div>
+        </div>
+    </body>
+    <footer>
+    </footer>
+</html>

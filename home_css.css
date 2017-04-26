@@ -1,0 +1,81 @@
+* {
+   /*border: 1px dashed #0000FF;*/
+}
+
+@font-face {
+    font-family: peach;
+    src:url('peach-sundress.ttf');
+}
+body {
+    background-color:darkslategrey;
+    background-size:cover;
+    background-repeat: no-repeat; 
+}
+
+#main nav {
+    align-content: center;
+    text-align:center;
+    display:block;
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+    padding-left: 5.7em;
+}
+
+nav a {
+    text-align:center;
+    text-decoration: none;
+    display: inline;
+    margin-right: 6.250em;
+    color: white;
+    text-shadow: 2px 2px black;
+    position: relative;
+}
+
+nav a:hover{
+    color:#559761;
+}
+
+#main h1{
+    font-size: 8em;
+    text-align: center;
+    margin-top: -.01em;
+    margin-bottom: 0em;
+    font-family: peach;
+}
+
+#main {
+    margin-top: -.625em;
+    margin-left: 18em;
+    height: fill;
+    background-color: #61B2FF;
+    width: 84em;
+    position: absolute;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding-top:1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+td img{
+    align-content="center";
+    height: 15em;
+    width: 23em;
+  
+    
+}
+td p{
+    position:relative;
+    color: white;
+    text-shadow: 1px 2px black;
+}
+
+td a{
+    text-decoration: none;
+}
+
