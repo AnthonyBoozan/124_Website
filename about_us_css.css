@@ -16,15 +16,16 @@ body {
     align-content: center;
     text-align:center;
     display:block;
-    font-size: 5ex;
-    margin-bottom: 5ex;
-    margin-left:6ex;
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+    padding-left: 5.7em;
 }
 
 nav a {
+    text-align:center;
     text-decoration: none;
     display: inline;
-    margin-right: 100px;
+    margin-right: 6.250em;
     color: white;
     text-shadow: 2px 2px black;
     position: relative;
@@ -35,21 +36,21 @@ nav a:hover{
 }
 
 #main h1{
-    font-size: 15ex;
+    font-size: 8em;
     text-align: center;
-    margin-top: -4px;
-    margin-bottom: 0px;
+    margin-top: -.01em;
+    margin-bottom: 0em;
     font-family: peach;
 }
 
 #main {
-    margin-top:-10px;
-    margin-left: 15%;
+    margin-top: -.625em;
+    margin-left: 18em;
+    margin-right: 18em;
     height: fill;
     background-color: #61B2FF;
-    width: 70%;
-    position: absolute;
-    border-radius: 5px;
+    width: 84em;
+    position: relative;
 }
 
 p {
@@ -59,9 +60,11 @@ p {
     text-shadow: 2px 2px black;
     position: relative;
     font-size: 30px;
-   
+    margin-bottom: 1ex;
 }
 
 #pp{
-    margin: 40px;
+    position: relative;
+    margin: 5ex;
+    padding-bottom: 5ex;
 }
